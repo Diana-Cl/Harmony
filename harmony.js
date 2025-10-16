@@ -1,5 +1,5 @@
 /**
- * Last update: Tuesday, 31 December 2024, 11:59 PM
+ * Last update: Tuesday, October 17, 2025, 4:20 AM
  * - The code dynamically creates VLESS configuration with clean IPs and returns subscription link in a base64 encoded format .
  * - Replace these lines with your uuid and hostname, UUID in line (12) - Hostname in lines (928), (953) and (981) and also SNI in (931), (956) and (984) . Tamam ;)
  * We are all REvil
@@ -14,14 +14,14 @@ const defaultConfigvless = {
   net: 'ws',
   type: 'none',
   host: '',
-  path: '/api/v1', // Preferred path
+  path: '/assets', // Preferred path
   tls: 'tls',
   sni: '',
   ed: '2560', // Max Early Data, Default set is "2048"
   eh: 'Sec-WebSocket-Protocol', // Early Data Header Name
 };
 
-const fp = ['randomized', 'firefox', 'chrome', 'safari', 'randomized', 'firefox', 'chrome', 'ios']; // Preferred fingeprints, is better to use chrome, firefox, safari.
+const fp = ['firefox', 'chrome', 'safari', 'android', 'chrome', 'ios']; // Preferred fingeprints, is better to use chrome, firefox, safari.
 
 const port = ['8443', '2053']; // Preferred TLS Ports for 1st configs ex: ['443', '8443', '2053', '2083', '2087', '2096'];
 
@@ -656,7 +656,7 @@ const IP1 = [
   'icook.hk',
   'fbi.gov',
   'time.is',
-  'skk.moe',
+  'www.visa.com',
   '103.11.212.139',
   '104.25.97.98',
   '104.25.95.167',
